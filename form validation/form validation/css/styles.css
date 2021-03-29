@@ -1,0 +1,191 @@
+/*---------------------------variables*/
+/*---------------------- mixins*/
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(208, 211, 143, 0.7);
+  font-family: Rubik; }
+
+/*- ---------------------------contingut*/
+/* ------------------------------header */
+/*--------------------------------Logo */
+.logo {
+  margin: 0;
+  display: flex; }
+
+.red-soc {
+  color: #03071e;
+  font-size: 32px;
+  margin-top: 5vw;
+  margin: 5vw 1vw 0 1vw; }
+
+/*--------------------------------navigation bar */
+.menu {
+  margin-left: 3vw; }
+  .menu .nav-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0); }
+
+/* -------------------------------- hover navigation bar */
+.nav-link:hover {
+  border-bottom: 1px solid #674014; }
+
+/*------------------------ hover links reds socials (footer i header)*/
+.fa-twitter, .fa-twitter-square {
+  color: #1da1f2; }
+
+.fa-facebook-square {
+  color: #3b5998; }
+
+.fa-instagram, .fa-instagram-square {
+  color: #c13584; }
+
+.fa-pinterest-square {
+  color: #e60023; }
+
+.hover-social {
+  opacity: .7; }
+
+.hover-social:hover {
+  opacity: 1; }
+
+/*----------------------------- Sobre nosaltres */
+.historia-nostre {
+  padding: 70px 0; }
+
+.nosaltres {
+  width: 90%;
+  margin: 0 auto; }
+  .nosaltres h2 {
+    padding-bottom: 2vw;
+    border-bottom: 1px solid #674014;
+    font-weight: bold; }
+  .nosaltres .apartat-historia {
+    margin-top: 4vw; }
+    .nosaltres .apartat-historia h4 {
+      padding-bottom: 1vw;
+      border-bottom: 1px solid #674014;
+      font-weight: bold; }
+  .nosaltres #desplegar {
+    display: none; }
+
+.certificats {
+  width: 90%;
+  padding-top: 10vw; }
+  .certificats h4 {
+    padding-bottom: 1vw;
+    border-bottom: 1px solid #674014;
+    font-weight: bold;
+    margin-bottom: 4vw; }
+  .certificats .artesania {
+    border-radius: 100%; }
+
+/*----------------------------------- productes destacats*/
+.contenidor-productes {
+  background-color: rgba(206, 209, 137, 0.6); }
+  .contenidor-productes .productes {
+    width: 90%;
+    padding: 70px 0; }
+    .contenidor-productes .productes h2 {
+      padding-bottom: 2vw;
+      border-bottom: 1px solid #674014;
+      font-weight: bold; }
+    .contenidor-productes .productes .oferta {
+      margin-top: 4vw; }
+    .contenidor-productes .productes .botiga {
+      padding: 1vw;
+      margin: 4vw auto; }
+    .contenidor-productes .productes a {
+      text-decoration: none;
+      color: #03071e; }
+    .contenidor-productes .productes .producte-dest {
+      margin-top: 2vw;
+      padding: 7px;
+      border: 1px solid #674014; }
+
+/*-----------------------------hovers productes*/
+.producte-dest:hover {
+  opacity: 0.7; }
+
+/*----------------------- fires i mercats*/
+.fires-i-mercats {
+  background-color: rgba(195, 198, 108, 0.8); }
+
+.mercats {
+  width: 90%;
+  padding: 70px 0; }
+  .mercats h2 {
+    padding-bottom: 2vw;
+    border-bottom: 1px solid #674014;
+    font-weight: bold; }
+  .mercats h4 {
+    margin: 3vw 0; }
+  .mercats .mapa {
+    margin: 1vw 0;
+    border-bottom: 1px solid #674014; }
+    .mercats .mapa div {
+      padding: 1vw 0; }
+
+footer {
+  background-color: #343a40;
+  color: #878F97;
+  margin-top: auto; }
+  footer .mes-info-mbl {
+    text-decoration: none;
+    color: #878F97; }
+  footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 2vw;
+    border-bottom: 1px solid #674014;
+    font-weight: bold;
+    border-color: #878F97; }
+  footer p {
+    font-size: 12px; }
+  footer .contacte i {
+    font-size: 14px;
+    margin: 0 1vw; }
+  footer .reds-socials a {
+    text-decoration: none; }
+  footer .reds-socials i {
+    font-size: 24px;
+    margin: 1vw; }
+  footer .copyright {
+    font-size: 12px; }
+
+.container {
+  margin: 50px  auto; }
+  .container .titol {
+    font-size: 42px;
+    margin: 10px auto; }
+  .container .a38 {
+    margin: 0 auto;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    border-bottom: 2px solid #8b8b8b;
+    border-right: 2px solid #8b8b8b; }
+    .container .a38 .login input {
+      margin-bottom: 5px; }
+    .container .a38 .login .sub-titol {
+      margin: 15px auto; }
+    .container .a38 .login .soc-nou {
+      padding: 0;
+      margin: 0; }
+    .container .a38 .login .footer-login {
+      margin: 20px 0px; }
+    .container .a38 .registrar {
+      display: none; }
+      .container .a38 .registrar input {
+        margin-bottom: 5px; }
+      .container .a38 .registrar .privacitat {
+        margin: 0 auto; }
+    .container .a38 .cassella {
+      margin-bottom: 1.5vw; }
+    .container .a38 .termicond {
+      margin-bottom: 0; }
+
+.error {
+  color: red; }
+
+/*# sourceMappingURL=styles.css.map */

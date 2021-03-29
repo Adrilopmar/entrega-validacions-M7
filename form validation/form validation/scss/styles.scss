@@ -1,0 +1,32 @@
+
+/*---------------------------variables*/
+$negre: #03071e;
+$verd-pastel:#D0D38F; //fons principal
+$bordes-titols: #674014; 
+$paddingseccio: 70px 0;
+
+/*---------------------- mixins*/
+@mixin titol {
+    padding-bottom: 2vw;
+    border-bottom: 1px solid $bordes-titols; 
+    font-weight:bold;
+}
+@mixin sub-titol {
+    padding-bottom: 1vw;
+    border-bottom: 1px solid $bordes-titols;
+    font-weight:bold;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba( $color: $verd-pastel, $alpha: 0.7) ;
+    font-family: Rubik;
+    
+}
+
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+@import "_forms.scss";

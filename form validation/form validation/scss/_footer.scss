@@ -1,0 +1,40 @@
+footer{
+    background-color:#343a40 ;
+    color: #878F97;
+    margin-top: auto;
+    
+   
+
+    
+    .mes-info-mbl{
+    text-decoration: none;
+    color: #878F97;
+    }
+    
+    h3{
+        font-size: 18px;
+        font-weight: bold;
+        @include titol();
+        border-color: #878F97;
+    }
+    p{
+        font-size: 12px;
+    }
+    .contacte i{
+        font-size: 14px;
+        margin: 0 1vw;
+    }
+    .reds-socials {
+        a{
+            text-decoration: none;
+        }
+        i{
+            font-size: 24px;
+            margin: 1vw;
+        }
+        
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}

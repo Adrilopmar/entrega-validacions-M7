@@ -1,0 +1,49 @@
+
+/*- ---------------------------contingut*/
+
+/* ------------------------------header */
+/*--------------------------------Logo */
+.logo{
+    margin: 0;
+    display: flex;
+}
+.red-soc{
+    color:$negre;
+    font-size: 32px;
+    margin-top: 5vw;
+    margin:5vw 1vw 0 1vw;
+}
+/*--------------------------------navigation bar */
+.menu{
+    margin-left: 3vw;
+    .nav-link{
+        border-bottom: 1px solid rgba($color: white, $alpha: 0);
+    }
+}
+
+
+/* -------------------------------- hover navigation bar */
+.nav-link:hover{
+    border-bottom: 1px solid $bordes-titols;
+}
+
+/*------------------------ hover links reds socials (footer i header)*/
+.fa-twitter, .fa-twitter-square{
+    color:#1da1f2;
+}
+.fa-facebook-square{
+    color: #3b5998;
+}
+.fa-instagram, .fa-instagram-square{
+    color: #c13584;
+}
+.fa-pinterest-square{
+    color: #e60023;
+
+}
+.hover-social{
+    opacity: .7;
+}
+.hover-social:hover{
+    opacity: 1;
+}

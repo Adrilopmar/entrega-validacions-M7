@@ -1,0 +1,292 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La boutique d'en Josep</title>
+    <!-- Bootstrap CDN -->
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Boostrap local -->
+    <!-- <link rel="stylesheet" href="dist/css/bootstrap.css"> -->
+    <!-- Font Awesome -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- styles css - local -->
+   
+   
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+
+    
+</head>
+<body>
+  <a id="principal"></a>
+    <div class=" container-fluid row justify-content-center justify-content-lg-start logo">
+       <div class="col-6"><a class="navbar-brand" href="#principal"><img class="w-100" src="images/logo-boutique.png" alt=""></a></div>
+        <div class=" col-6 d-none d-md-inline-flex justify-content-end links-reds">
+            <a class="red-soc" href="#"><i class="fab fa-twitter-square hover-social"></i></a>
+            <a class="red-soc" href="#"><i class="fab fa-facebook-square hover-social"></i></a>
+            <a class="red-soc" href="#"> <i class="fab fa-instagram-square hover-social"></i></a>
+               <a class="red-soc" href="#"><i class="fab fa-pinterest-square hover-social"></i></a>
+        </div>      
+        </div>
+    </div>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+          <div class="marge-nav-links">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto textbar">
+              <li class="nav-item active">
+                <a class="nav-link" href="#principal">Principal <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#quisom">Qui som?</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#productes">Productes destacats</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Botiga</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#mercats">Mercats i fires</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <form class="login form-inline my-2 my-lg-0">
+            <a class="btn btn-success" href="split.html">Log in / registrar-se</a>
+          </form>
+        </div>
+        </nav>
+      
+    </header>
+    <section>
+        <div id="mainSlide" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mainSlide" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlide" data-slide-to="1"></li>
+                <li data-target="#mainSlide" data-slide-to="2"></li>
+                <li data-target="#mainSlide" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slidesac.png" class="d-block w-100" alt="sac-espigol"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Coixins terapèutics</h5>
+                        <p>Coixins tèrmics per tractar els dolors i l'estrès tant en fred com en calent.</p>
+                    </div>
+                </div>
+          <div class="carousel-item">
+            <img src="images/slidesabo.png" class="d-block w-100" alt="sabó"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sabons Artesans</h5>
+              <p>Sabons sòlids naturals per a tota mena de pells i tractaments.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slideolis.png" class="d-block w-100" alt="olis-essencials"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tractaments naturals</h5>
+              <p>Tractaments naturals específics per a tot tipus de persones.  </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slidenatural.png" class="d-block w-100" alt="morter"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Productes 100% artesans</h5>
+              <p>Tots els nostres productes estan fets a base de productes naturals i amor</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#mainSlide"
+          role="button"
+          data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#mainSlide"
+          role="button"
+          data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+      </div>
+    </section>
+    <section class="historia-nostre">
+      <a id="quisom"></a>
+        <article>
+            <div class="container nosaltres">
+                <h2 class="text-center">Sobre nosaltres</h2>
+                <div class="row apartat-historia">
+                  <div class="col-12 col-md-6 text-nosaltres">
+                    <h4>La nostra història</h4>
+                    <div class="text-justify">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non natus perspiciatis sapiente magni! Ducimus praesentium, deleniti qui expedita eligendi ipsa amet omnis. sapiente magni!Ducimus praesentium, deleniti excepturi minus voluptatem officia quasi voluptate architecto quae qui expedita eligendi ipsa amet omnissapiente magni! <br/>Ducimus
+                      praesentium, deleniti excepturi minus voluptatem officia quasi voluptate architecto quae qui expedita eligendi ipsa amet omnissapiente magni! <a id="mes" href="#about" onclick="veuremes('mes');"> <i>...[Llegir més]</i></a>
+                      </p> 
+                      <p id="desplegar">Ducimus praesentium, deleniti excepturi minus voluptatem officia quasi voluptate architecto quaequi expedita eligendi ipsa amet omnissapiente magni! <br/>
+                       Ducimus praesentium, deleniti excepturi minus voluptatem officia quasi voluptate architecto quae qui expedita eligendi ipsaamet omnissapiente magni! sapiente magni! Ducimus praesentium,deleniti excepturi minus voluptatem officia quasi voluptate architecto quae qui expedita eligendi ipsa amet omnissapiente
+                      magni!<a id="menys" href="#about" onclick="veuremes('menys');"> <i>...[Llegir menys]</i></a></p>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img class="w-100" src="images/recetas-jabones.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+        </article>
+        <div class="container certificats">
+            <h4 class="">Som artesans certificats</h4>
+            <div class="row justify-content-around align-items-baseline">
+              <div class="col-5 col-md-3">
+                <img class="w-100" src="images/GREMI-DE-SABONERRS.png" alt="">
+              </div>
+              <div class="col-5 col-md-3">
+                <img class="w-100" src="images/carnet-artesa.png" alt="">
+              </div>
+              <div class="col-5 col-md-3 ">
+                <img class="w-75 artesania"src="images/artesania-catalunya.jpg" alt="">
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="container-fluid contenidor-productes">
+      <a id="productes" ></a>
+        <article class="container productes">
+                <h2 class="text-center">Productes destacats</h2>  
+                <div class="row justify-content-center oferta">
+                  <div class="col-7 col-md-4 col-lg-3">
+                    <a href="#">
+                      <img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5>
+                  </a>
+                  </div>
+                  <div class="col-7 col-md-4 col-lg-3">
+                    <a href="#"><img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5></a>
+                  </div>
+                  <a href="#"><div class="col-7 col-md-4 col-lg-3">
+                    <img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5></a>
+                  </div>
+                  <a href="#"><div class="col-7 col-md-4 col-lg-3">
+                    <img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5></a>
+                  </div>
+                  <a href="#"><div class="d-none d-md-block col-md-4 col-lg-3">
+                    <img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5></a>
+                  </div>
+                  <a href="#"><div class="d-none d-md-block col-md-4 col-lg-3">
+                    <img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5></a>
+                  </div>
+                  <a href="#"><div class="d-none d-lg-block col-md-4 col-lg-3">
+                    <img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5></a>
+                  </div>
+                  <a href="#"><div class="d-none d-lg-block col-md-4 col-lg-3">
+                    <img class="w-100 producte-dest" src="images/handmade.jpg" alt="">
+                    <h5 class="">Nom producte</h5></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="btn btn-info botiga col-7 col-md-3">veure més</div>
+                </div>
+        </article>
+    </section>
+    <section class="container-fluid fires-i-mercats">
+      <a id="mercats"></a>
+      <div class="container mercats">
+        <h2 class="text-center">Fires i mercats</h2>
+        <div class="row text-center">
+          <h4 class="col-3">Fira</h4>
+          <h4 class="col-3">Lloc</h4>
+          <h4 class="col-6">Ubicació</h4>
+        </div>
+        <div class="row mapa align-items-center">
+          <div class="col-3 locs"><p>Fira del gall</p></div>
+          <div class="col-3 locs"><p>Vilafranca del penedés</p></div>
+          <div class="col-6"> <iframe class="w-100"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1730.4125144614834!2d1.696498038324004!3d41.34212446142798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4798adfdbf557%3A0x136fbb2ddafe4438!2s08720%20Villafranca%20del%20Panad%C3%A9s%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1611563716085!5m2!1ses!2ses" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        </div>
+        <div class="row mapa align-items-center">
+          <div class="col-3 locs"><p>Fira palau</p></div>
+          <div class="col-3 locs"><p>Palau de plegamans</p></div>
+          <div class="col-6"> <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.0710101357454!2d2.183495827891764!3d41.58220500975026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c07ef55f61ed%3A0xc58db8637134e6ae!2sCastell%20de%20Plegamans!5e0!3m2!1ses!2ses!4v1611564331156!5m2!1ses!2ses" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        </div>
+        <div class="row mapa align-items-center">
+          <div class="col-3 locs"><p>Fira artesana</p></div>
+          <div class="col-3 locs"><p>Olesa de montserrat</p></div>
+          <div class="col-6"><iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592.5160459113639!2d1.893793031559718!3d41.54556812029231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a48b0ad42cc8a5%3A0x43ba76816358e3df!2sOlesa%20de%20Montserrat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1611564408465!5m2!1ses!2ses" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        </div>
+      </div>
+    </section>
+<footer>
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-md-baseline separadors-footers">
+      <div class="col-7 col-md-3 ">
+        <div class="text-center">
+        <a href="#" class="d-none d-md-block"><img class="w-75" src="images/logo-boutique-sm.png" alt="logo"></a>
+        <a href="#" class="d-md-none" ><img class="w-100"src="images/logo-boutique.png" alt="logo"></a></div>
+        <p class=" d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nostrum cupiditate laborum voluptatum doloribus nisi?</p>
+      </div>
+      <div class="col-7 col-md-3 contacte">
+        <h3 class="text-center"> Contacte</h3>
+        <ul class="list-inline">
+          <li><i class="fas fa-envelope"></i>boutiquejosep@gmail.com</li>
+          <li><i class="fas fa-phone-square-alt"></i>670.xxx.xxx</li>
+          <li><i class="fas fa-map-marker-alt"></i>c/arquitecte torres clavé</li>
+        </ul>
+      </div>
+      <div class="col-7 col-md-3">
+        <h3 class="text-center d-none d-md-block">Més info</h3>
+        <a href="#" class="mes-info-mbl d-md-none"><h3 class="text-center">Més info</h3></a>
+        <p class="d-none d-md-inline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi non qui, sequi quae quaerat cum!</p>
+      </div>
+      <div class="col-7 col-md-3 reds-socials">
+        <h3 class="text-center">Segueix-nos!</h3>
+        <ul class="list-inline list-inline d-flex justify-content-center">
+          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter hover-social"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="
+             fab fa-facebook-square hover-social"></i></a><li>
+          <li class="list-inline-item"><a href="#"><i class="
+            fab fa-instagram hover-social"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest-square hover-social"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h6 class="text-center copyright">Copyright <i class="far fa-copyright"></i> 2021 tots els drets reservats</h6>
+    </div>
+    </div>
+  </div>  
+</footer>
+<!-- ----------------------funcions JS -->
+<script src="js/scripts.js"></script>
+<!-- ---------------------------------- JQ jquery-validation -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<!-- ---------------------Bootstrap CDN -->
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<!-- <script src="/dist/js/bootstrap.bundle.js"></script> -->
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>-->
+</body>
+</html>

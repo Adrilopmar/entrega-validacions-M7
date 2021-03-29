@@ -1,0 +1,89 @@
+/*----------------------------- Sobre nosaltres */
+.historia-nostre{
+    padding: $paddingseccio;
+}
+.nosaltres{
+    width: 90%;
+    margin: 0 auto;
+    h2{
+        @include titol();
+        
+    }
+    .apartat-historia{
+        margin-top: 4vw;
+        h4{
+            @include sub-titol()
+        }
+    }
+    #desplegar{
+        display: none;
+    }
+}
+.certificats{
+    width: 90%;
+    padding-top: 10vw;
+    h4{
+        @include sub-titol();
+        margin-bottom: 4vw;
+    }
+    .artesania{
+        border-radius: 100%;
+    }
+}
+/*----------------------------------- productes destacats*/
+.contenidor-productes{
+    background-color: rgba($color:#CED189, $alpha:.6);
+    // background-color: rgba($color:#E2CBA2, $alpha:1);
+    // background-color: rgba($color:#F4C67B, $alpha:0.5);
+    .productes{
+        width: 90%;
+        padding: $paddingseccio;
+        
+        h2{
+            @include titol();
+        }
+        .oferta{
+            margin-top: 4vw;
+        }
+        .botiga{
+            padding: 1vw;
+            margin: 4vw auto
+        }
+        a{
+            text-decoration: none;
+            color: $negre;
+            
+        }
+        .producte-dest{
+            margin-top: 2vw;
+            padding: 7px;
+            border: 1px solid rgba($color:$bordes-titols, $alpha:1);
+        }
+    }
+}
+/*-----------------------------hovers productes*/ 
+ .producte-dest:hover{
+     opacity: 0.7;
+     
+ }
+ /*----------------------- fires i mercats*/
+ .fires-i-mercats{
+    background-color: rgba($color:#C3C66C, $alpha:.8);
+ }
+ .mercats{
+     width: 90%;
+     padding: $paddingseccio;
+     h2{
+         @include titol();
+     }
+     h4{
+         margin: 3vw 0;
+     }
+     .mapa{
+         margin: 1vw 0;
+         border-bottom: 1px solid $bordes-titols;
+         div{
+             padding: 1vw  0 ;
+         }
+     }
+ }

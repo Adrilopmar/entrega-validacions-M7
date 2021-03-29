@@ -1,0 +1,50 @@
+.container{
+    margin: 50px  auto;
+    .titol{
+        font-size: 42px;
+        margin: 10px auto;
+    }
+    .a38{
+        margin: 0 auto;
+        padding: 15px;
+        background:  #f1f1f1;;
+        border-radius: 10px;
+        border-bottom: 2px solid #8b8b8b ;
+        border-right: 2px solid #8b8b8b;
+        .login{
+            input{
+                margin-bottom: 5px;
+            }
+            .sub-titol{
+                margin: 15px auto;
+            }
+            .soc-nou{
+                padding: 0;
+                margin: 0;
+             }
+             .footer-login{
+                margin: 20px 0px;
+            }
+        }
+        .registrar{
+            display: none;
+            input{
+                margin-bottom: 5px;
+            }
+            .privacitat{
+                margin: 0 auto;
+            } 
+        }
+        .cassella{
+            margin-bottom: 1.5vw;
+        }
+        .termicond{
+            margin-bottom: 0;
+        }
+    }
+}
+.error{
+    color: red;
+}
+
+
