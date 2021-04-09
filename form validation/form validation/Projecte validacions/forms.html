@@ -99,11 +99,11 @@
                 
                 <div class="row justify-content-around">
                   <div class="col-4 cassella">
-                    <input type="tel" placeholder="Telf" id="nouTelf" class="form-control ">
-                    <div id="fail-reg-telf" class="invalid-feedback"></div>
+                    <input type="tel" placeholder="Telf" onblur="validTelf()" id="nouTelf" class="form-control ">
+                    <div id="fail-reg-telf" " class="invalid-feedback"></div>
                   </div>
                   <div class="col-4 cassella">
-                    <input type="text" placeholder="Codi postal" id="nouPostal" class="form-control">
+                    <input type="text" placeholder="Codi postal" onblur="validPost()" id="nouPostal" class="form-control">
                     <div id="fail-reg-post" class="invalid-feedback"></div>
                   </div>
                   <div class="col-4 cassella">
@@ -168,17 +168,17 @@
                 </div>
                 <div class="row justify-content-around">
                   <div class="col-12 cassella">
-                    <input type="text" placeholder="e-mail" id="nouMail" class="form-control ">
+                    <input type="text" placeholder="e-mail" onblur="validMail()" id="nouMail" class="form-control ">
                     <div id="fail-reg-mail" class="invalid-feedback"></div>
                   </div>
                 </div>
                 <div class="row justify-content-around">
                   <div class="col-6 cassella">
-                    <input type="password" placeholder="Contrasenya" id="nouPass" class="form-control ">
+                    <input type="password" placeholder="Contrasenya" onblur="validPass()" id="nouPass" class="form-control ">
                     <div id="fail-reg-pass" class="invalid-feedback"></div>
                   </div>
                   <div class="col-6 cassella">
-                    <input type="password" placeholder="Confirma la contrasenya" id="nouConfPass" class="form-control">
+                    <input type="password" placeholder="Confirma la contrasenya" onblur="validConfPass()" id="nouConfPass" class="form-control">
                     <div id="fail-reg-conf-pass" class="invalid-feedback"></div>
                   </div>
                 </div> <br>

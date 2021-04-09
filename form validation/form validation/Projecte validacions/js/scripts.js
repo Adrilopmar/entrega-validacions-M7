@@ -51,8 +51,6 @@ function login(){
      return true
    }
 }
-
-
 var secPass = /(?=  .*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}/;
 function strongPass(password){
   if(secPass.test(password)){
@@ -62,11 +60,7 @@ function strongPass(password){
     return false
   }
 }
-
-
-
-function singIn(){
-  var regNom = document.getElementById('nouNom'); 
+let regNom = document.getElementById('nouNom'); 
       regCog = document.getElementById('nouCog');
       regAdress = document.getElementById('nouAdress');
       regTelf =document.getElementById('nouTelf');
@@ -78,103 +72,124 @@ function singIn(){
       regTerm = document.getElementById('nouTermes');
       regFails =0;
       regCorreu = /^([a-zA-Z0-9_\.\-])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      strongPass= /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/
-
-      if(regNom.value ==('')){
-        regNom.classList.add('is-invalid');
-        document.getElementById('fail-reg-nom').textContent=('Aquest camp és obligatori');
-        regFails ++
-      }
-
-      if(regCog.value ==('')){
-        regCog.classList.add('is-invalid');
-        document.getElementById('fail-reg-cog').textContent=('Aquest camp és obligatori');
-        regFails ++
-      }
-      if(regAdress.value ==('')){
-        regAdress.classList.add('is-invalid');
-        document.getElementById('fail-reg-adress').textContent=('Aquest camp és obligatori');
-        regFails ++
-      }
-      if(regTelf.value ==('')|| isNaN(regTelf.value) !== false){
-        regTelf.classList.add('is-invalid');
-        regFails ++
-        if(regTelf.value ==('')){
-          document.getElementById('fail-reg-telf').textContent=('Aquest camp és obligatori');
-        }
-        else{
-          document.getElementById('fail-reg-telf').textContent=('Introdueix un telèfon vàlid');
-        }
-      }
-      if(regPostal.value ==('') || isNaN(regPostal.value) !== false ){
-        regPostal.classList.add('is-invalid');
-        regFails ++
-        if(regPostal.value ==('')){
-          document.getElementById('fail-reg-post').textContent=('Aquest camp és obligatori');
-        }
-        else{
-          document.getElementById('fail-reg-post').textContent=('Codi postal no vàlid');
-        }
-      }
-      if(regProv.value ==('')){
-        regProv.classList.add('is-invalid');
-        document.getElementById('fail-reg-prov').textContent=('Aquest camp és obligatori');
-        regFails ++
-      }
-      if(regMail.value.length >=0 ){
-        if(regCorreu.test(regMail.value) == false && regMail.value.length>=1){
-          document.getElementById('fail-reg-mail').textContent=('Correu invalid')
-          regMail.classList.add('is-invalid');
-          regFails ++
-        }
-        if(regMail.value==('')){
-          document.getElementById('fail-reg-mail').textContent=(' Aquest camp és obligatori')
-          regMail.classList.add('is-invalid');
-        regFails ++
-        }
-      }
-      if(regPass.value==('')){
-          regPass.classList.add('is-invalid');
-          document.getElementById('fail-reg-pass').textContent=('La contrasenya ha de tenir com ha mínim 8 caràcters');
-          regFails ++
-        }
-      if(regPass.value!==('')){
-        if(regPass.value.length<8){
-          regPass.classList.add('is-invalid');
-          document.getElementById('fail-reg-pass').textContent=('La contrasenya ha de tenir com ha mínim 8 caràcters');
-          regFails ++
-        }
-        if(regPass.value.length>=8){
-          goodpass = regPass.value
-          if(strongPass.test(goodpass) == false){
-            regPass.classList.add('is-invalid');
-            document.getElementById('fail-reg-pass').textContent=('La contrasenya ha contenir majúscules, minúscules i numeros');
-            regFails ++
-          }
-        }
-
-      }
-      
-      if(regConfPass.value !== regPass.value){
-        regConfPass.classList.add('is-invalid');
-        document.getElementById('fail-reg-conf-pass').textContent=('Les contrasenyes no coincideixen')
-        regFails ++
-      }
-      if(regTerm.checked !==true){
-        regTerm.classList.add('is-invalid');
-        document.getElementById('fail-reg-termes').textContent=('Accepta els termes i condicions')
-        regFails ++
-      }
-      if(regFails>0){
-        return false;
-      }
-      else{
-        return true
-      }
+      strongPass= /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
+function validName(){
+  if(regNom.value ==('')){
+    regNom.classList.add('is-invalid');
+    document.getElementById('fail-reg-nom').textContent=('Aquest camp és obligatori');
+  }
 }
-
-
-
+function validSurname(){
+  if(regCog.value ==('')){
+    regCog.classList.add('is-invalid');
+    document.getElementById('fail-reg-cog').textContent=('Aquest camp és obligatori');
+    regFails ++
+  }
+}
+function validAdress(){
+  if(regAdress.value ==('')){
+    regAdress.classList.add('is-invalid');
+    document.getElementById('fail-reg-adress').textContent=('Aquest camp és obligatori');
+    regFails ++
+  }
+}
+function validProv(){
+  if(regProv.value ==('')){
+    regProv.classList.add('is-invalid');
+    document.getElementById('fail-reg-prov').textContent=('Aquest camp és obligatori');
+    regFails ++
+  }
+}
+function validTelf(){
+  if(regTelf.value ==('')|| isNaN(regTelf.value) !== false){
+    regTelf.classList.add('is-invalid');
+    regFails ++
+    if(regTelf.value ==('')){
+      document.getElementById('fail-reg-telf').textContent=('Aquest camp és obligatori');
+    }
+    else{
+      document.getElementById('fail-reg-telf').textContent=('Introdueix un telèfon vàlid');
+    }
+}
+}
+function validPost(){
+  if(regPostal.value ==('') || isNaN(regPostal.value) !== false ){
+    regPostal.classList.add('is-invalid');
+    regFails ++
+    if(regPostal.value ==('')){
+      document.getElementById('fail-reg-post').textContent=('Aquest camp és obligatori');
+    }
+    else{
+      document.getElementById('fail-reg-post').textContent=('Codi postal no vàlid');
+    }
+  }
+}
+function validMail(){
+  if(regMail.value.length >=0 ){
+    if(regCorreu.test(regMail.value) == false && regMail.value.length>=1){
+      document.getElementById('fail-reg-mail').textContent=('Correu invalid')
+      regMail.classList.add('is-invalid');
+      regFails ++
+    }
+    if(regMail.value==('')){
+      document.getElementById('fail-reg-mail').textContent=(' Aquest camp és obligatori')
+      regMail.classList.add('is-invalid');
+      regFails ++
+    }
+  }
+}
+function validPass(){
+  if(regPass.value==('')){
+    regPass.classList.add('is-invalid');
+    document.getElementById('fail-reg-pass').textContent=('La contrasenya ha de tenir com ha mínim 8 caràcters');
+    regFails ++
+  }
+  if(regPass.value!==('')){
+    if(regPass.value.length<8){
+      regPass.classList.add('is-invalid');
+      document.getElementById('fail-reg-pass').textContent=('La contrasenya ha de   tenir com ha mínim 8 caràcters');
+      regFails ++
+  }
+    if(regPass.value.length>=8){
+      goodpass = regPass.value
+      if(strongPass.test(goodpass) == false){
+        regPass.classList.add('is-invalid');
+        document.getElementById('fail-reg-pass').textContent=('La contrasenya ha  contenir majúscules, minúscules i numeros');
+        regFails ++
+      }
+  }
+}
+}
+function validConfPass(){
+  if(regConfPass.value !== regPass.value){
+    regConfPass.classList.add('is-invalid');
+    document.getElementById('fail-reg-conf-pass').textContent=('Les contrasenyes no coincideixen')
+    regFails ++
+  }
+}
+function singIn(){
+  regFails = 0;
+  validName();
+  validSurname();    
+  validAdress();   
+  validProv();   
+  validTelf();
+  validPost();
+  validMail();
+  validPass();
+  validConfPass();  
+  if(regTerm.checked !==true){
+    regTerm.classList.add('is-invalid');
+    document.getElementById('fail-reg-termes').textContent=('Accepta eltermes i condicions')
+    regFails ++
+  }
+  if(regFails>0){
+    return false;
+  }
+  else{
+    return true
+  }
+}
 document.addEventListener('blur',(event) => {
   if(event.target.value!='') {
     event.target.classList.remove('is-invalid');
